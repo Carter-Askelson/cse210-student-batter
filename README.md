@@ -39,4 +39,7 @@ root                    (project root folder)
 
 ## Authors
 ---
-* # TODO: Add your names and emails here
+* Graham Walker walkerg5@byui.edu
+* Emma Burkett
+* Carter Askelson
+* Alex Parker
