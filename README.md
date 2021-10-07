@@ -5,11 +5,11 @@ none left. If you miss the ball the game is over.
 
 ## Getting Started
 ---
-Make sure you have Python 3.8.0 or newer and asciimatics 1.12.0 or new installed 
-and running on your machine. You can install Asciimatics by opening a terminal 
+Make sure you have Python 3.8.0 or newer and Arcade 2.6.3 or new installed 
+and running on your machine. You can install Arcade by opening a terminal 
 and running the following command.
 ```
-python3 -m pip install asciimatics
+python3 -m pip install arcade
 ```
 After you've installed the required libraries, open a terminal and browse to the 
 project's root folder. Start the program by running the following command.
@@ -35,11 +35,11 @@ root                    (project root folder)
 ## Required Technologies
 ---
 * Python 3.8.0
-* Asciimatics 1.12.0
+* Arcade 2.6.3
 
 ## Authors
 ---
+* Carter Askelson Askelsonc@gmail.com
 * Graham Walker walkerg5@byui.edu
-* Emma Burkett
-* Carter Askelson
-* Alex Parker
+* Emma Burkett bur20089@byui.edu
+* Alex Parker parkeale@byui.edu
