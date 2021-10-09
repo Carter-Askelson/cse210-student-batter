@@ -10,21 +10,35 @@ class Game(arcade.Window):
         self.bottom_wall_list = None
         self.left_wall_list = None
 
+        self.bat_list = None
+
     def setup(self):
         self.top_wall_list = arcade.SpriteList()
         self.right_wall_list = arcade.SpriteList()
         self.bottom_wall_list = arcade.SpriteList()
         self.left_wall_list = arcade.SpriteList()
 
+        self.bat_list = arcade.SpriteList()
+
         self.create_walls()
+        self.create_bat()
 
     def on_draw(self):
         arcade.start_render()
+        arcade.set_background_color(arcade.color.AMAZON)
+
         self.top_wall_list.draw()
         self.bottom_wall_list.draw()
         self.right_wall_list.draw()
         self.left_wall_list.draw()
-        arcade.set_background_color(arcade.color.AMAZON)
+
+        self.bat_list.draw()
+
+    def create_bat(self):
+        bat = arcade.Sprite(":resources:images/tiles/bridgeA.png", 0.3)
+        bat.center_x = 300
+        bat.center_y = 125
+        self.bat_list.append(bat)
 
     def create_walls(self):
         # top wall
