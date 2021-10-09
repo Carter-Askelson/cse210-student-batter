@@ -20,8 +20,13 @@ class Game(arcade.Window):
 
         self.bat_list = arcade.SpriteList()
 
+        self.brick_list = arcade.SpriteList()
+
         self.create_walls()
         self.create_bat()
+
+        for row_num in range(4):
+            self.create_bricks(row_num)
 
     def on_draw(self):
         arcade.start_render()
@@ -33,6 +38,26 @@ class Game(arcade.Window):
         self.left_wall_list.draw()
 
         self.bat_list.draw()
+
+        self.brick_list.draw()
+
+    def create_bricks(self, row_num):
+
+        y_coordinate = 0
+
+        if row_num == 1:
+            y_coordinate = 25
+        elif row_num == 2:
+            y_coordinate = 50
+        elif row_num == 3:
+            y_coordinate = 75
+
+
+        for x in range(80, 525, 22):
+            bricks = arcade.Sprite(":resources:images/items/coinGold.png", 0.3)
+            bricks.center_x = x
+            bricks.center_y = 400 + y_coordinate
+            self.top_wall_list.append(bricks)
 
     def create_bat(self):
         bat = arcade.Sprite(":resources:images/tiles/bridgeA.png", 0.3)
