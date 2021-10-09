@@ -25,7 +25,7 @@ class Game(arcade.Window):
 
     def on_draw(self):
         arcade.start_render()
-        arcade.set_background_color(arcade.color.AMAZON)
+        arcade.set_background_color(arcade.color.SKY_BLUE)
 
         self.top_wall_list.draw()
         self.bottom_wall_list.draw()
@@ -37,34 +37,34 @@ class Game(arcade.Window):
     def create_bat(self):
         bat = arcade.Sprite(":resources:images/tiles/bridgeA.png", 0.3)
         bat.center_x = 300
-        bat.center_y = 125
+        bat.center_y = 75
         self.bat_list.append(bat)
 
     def create_walls(self):
         # top wall
         for x in range(10, 600, 34):
-            top_wall = arcade.Sprite(":resources:images/tiles/boxCrate_double.png", 0.3)
+            top_wall = arcade.Sprite(":resources:images/tiles/stoneCenter.png", 0.3)
             top_wall.center_x = x
             top_wall.center_y = 580
             self.top_wall_list.append(top_wall)
 
         # right wall
         for y in range(10, 600, 34):
-            right_wall = arcade.Sprite(":resources:images/tiles/boxCrate_double.png", 0.3)
+            right_wall = arcade.Sprite(":resources:images/tiles/stoneCenter.png", 0.3)
             right_wall.center_x = 580
             right_wall.center_y = y
             self.right_wall_list.append(right_wall)
 
         # left wall
         for y in range(10, 600, 34):
-            left_wall = arcade.Sprite(":resources:images/tiles/boxCrate_double.png", 0.3)
+            left_wall = arcade.Sprite(":resources:images/tiles/stoneCenter.png", 0.3)
             left_wall.center_x = 20
             left_wall.center_y = y
             self.left_wall_list.append(left_wall)
 
         # bottom wall
         for x in range(10, 600, 34):
-            bottom_wall = arcade.Sprite(":resources:images/tiles/boxCrate_double.png", 0.3)
+            bottom_wall = arcade.Sprite(":resources:images/tiles/lava.png", 0.3)
             bottom_wall.center_x = x
             bottom_wall.center_y = 20
             self.bottom_wall_list.append(bottom_wall)
