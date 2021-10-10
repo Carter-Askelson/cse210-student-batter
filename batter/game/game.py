@@ -78,7 +78,7 @@ class Game(arcade.Window):
             self.velocity_up = 0
             self.velocity_right = 0
             self.message_color = arcade.color.BLACK
-
+        #hello
         
 
     def on_key_press(self, symbol: int, modifiers: int):
