@@ -43,7 +43,7 @@ class Game(arcade.Window):
         self.walls_list.draw()
         self.bat_list.draw()
         self.brick_list.draw()
-        
+
         arcade.draw_text("GAME OVER.", 43, 275, self.message_color, 60)
         arcade.draw_circle_filled(self.x, self.y, self.radius, arcade.color.RED)
         self.bat_list.draw()
